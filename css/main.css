@@ -36,6 +36,7 @@ article {
 article .impact-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 25px;
 }
 article h1 {
@@ -60,6 +61,78 @@ article img {
   width: 25vw;
   height: auto;
   border-radius: 15px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 2em;
+}
+section .healthcare, section .furniture {
+  padding-bottom: 60px;
+}
+section .healthcare h2, section .furniture h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .healthcare .card-section, section .furniture .card-section {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 60px;
+}
+section .healthcare .product-card, section .furniture .product-card {
+  background: #FFDAC6;
+  color: #7C6A0A;
+  width: 15vw;
+  height: 40vh;
+  padding: 20px;
+  border-radius: 10px;
+}
+section .healthcare .product-card .icon, section .furniture .product-card .icon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .healthcare .product-card .icon svg path, section .furniture .product-card .icon svg path {
+  stroke: currentColor;
+}
+section .healthcare .product-card .icon svg, section .furniture .product-card .icon svg {
+  width: 28px;
+  height: 28px;
+  color: #7C6A0A;
+}
+section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+section .furniture .product-card {
+  background: #BABD8D;
+  color: white;
+}
+section .furniture .product-card .icon svg {
+  color: white;
 }
 
 footer {

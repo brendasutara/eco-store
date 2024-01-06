@@ -44,6 +44,7 @@ article {
     .impact-section {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 25px;
     }
     h1 {
@@ -70,6 +71,92 @@ article {
         border-radius: 15px;
     }   
 }
+
+section {
+    width: auto;
+    height: auto;
+    padding: 60px;
+
+    h2 {
+        color: $primary-text-color;
+        font-size: 2em;
+    }
+
+    .healthcare {
+        padding-bottom: 60px;
+
+        h2 {
+            font-weight: 300;
+            padding-bottom: 60px;
+        }
+
+        .card-section {
+            display: flex;
+            width: auto;
+            height: auto;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 60px;
+            row-gap: 60px;
+        }
+
+        .product-card {
+            background: $secundary-color;
+            color: $primary-text-color;
+            width: 15vw;
+            height: 40vh;
+            padding: 20px;
+            border-radius: 10px;
+
+            .icon {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 12px;
+
+                svg path {
+                    stroke: currentColor;
+                }
+
+                svg {
+                    width: 28px;
+                    height: 28px;
+                    color: $primary-text-color;
+                }
+            }
+
+            .product-image {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 25vh;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .furniture {
+        @extend .healthcare;
+        .product-card {
+            background: $tertiary-color;
+            color: white;
+            .icon {
+                svg {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
 
 footer {
     background-color: $quaternion-color;
